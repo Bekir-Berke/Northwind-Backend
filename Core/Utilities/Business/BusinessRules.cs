@@ -5,16 +5,15 @@ using System.Text;
 
 namespace Core.Utilities.Business
 {
-    public class BussinesRules
+    public class BusinessRules
     {
         public static IResult Run(params IResult[] logics)
         {
-            List<IResult> results = new List<IResult>();
             foreach (var logic in logics)
             {
                 if (!logic.Success)
                 {
-                    results.Add(logic);
+                    return logic;
                 }
             }
             return null;

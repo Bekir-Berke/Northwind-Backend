@@ -22,5 +22,6 @@ namespace Business.Constants
         public static string UserNotFound;
         public static string PasswordError;
         public static string UserRegistered;
+        public static string ProductsListed;
     }
 }
